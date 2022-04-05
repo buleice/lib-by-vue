@@ -20,7 +20,7 @@ export default {
     },
     size: {
       type: String,
-      validator: function (value) {
+      validator(value) {
         return ['small', 'medium', 'large'].indexOf(value) !== -1;
       },
     },
@@ -32,6 +32,7 @@ export default {
   emits: ['click'],
 
   setup(props, { emit }) {
+    // eslint-disable-next-line no-param-reassign
     props = reactive(props);
     return {
       classes: computed(() => ({
@@ -45,8 +46,8 @@ export default {
       })),
       onClick() {
         emit('click');
-      }
-    }
+      },
+    };
   },
 };
 </script>

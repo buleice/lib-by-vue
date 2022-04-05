@@ -18,11 +18,11 @@
       "webpack-env",
       "jest"
     ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
+    // "paths": {
+    //   "@/*": [
+    //     "src/*"
+    //   ]
+    // },
     "lib": [
       "esnext",
       "dom",
@@ -30,13 +30,13 @@
       "scripthost"
     ]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
+  // "include": [
+  //   "src/**/*.ts",
+  //   "src/**/*.tsx",
+  //   "src/**/*.vue",
+  //   "tests/**/*.ts",
+  //   "tests/**/*.tsx"
+  // ],
   "exclude": [
     "node_modules"
   ]
